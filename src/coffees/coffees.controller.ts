@@ -10,7 +10,7 @@ import {
 } from '@nestjs/common';
 import { CoffeesService ,Coffee} from './coffees.service';
 
-@Controller('coffees')
+@Controller('/api/v1/coffees')
 export class CoffeesController {
   private service;
   constructor(private readonly coffeeService: CoffeesService) {}
